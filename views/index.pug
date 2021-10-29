@@ -9,20 +9,21 @@ block content
         .inner1
           h1.start.hidden= 'ОБ АВТОРЕ'
         .inner2.mutable
-          -
-            var menu = [
-              {title: 'синий светофор', url: '/bluelights'},
-              {title: 'автопортреты', url: '/'},
-              {title: 'достоевский', url: '/dostoevsky'},
-              {title: 'зин влада', url: '/vlada'},
-              {title: 'портреты', url: '/'},
-              {title: 'фотосерии', url: '/'}
-            ];
-          each item in menu
-            if item.title === 'фотосерии'
-              p: span.trigger.menu_item.other.hidden= item.title
-            else 
-              p: a(href=item.url):  span.menu_item.other.hidden= item.title
+          #main_menu
+            -
+              var menu = [
+                {title: 'синий светофор', url: '/bluelights'},
+                {title: 'автопортреты', url: '/'},
+                {title: 'достоевский', url: '/dostoevsky'},
+                {title: 'зин влада', url: '/vlada'},
+                {title: 'портреты', url: '/'},
+                {title: 'фотосерии', url: '/'}
+              ];
+            each item in menu
+              if item.title === 'фотосерии'
+                p: span.trigger.menu_item.other.hidden= item.title
+              else 
+                p: a(href=item.url):  span.menu_item.other.hidden= item.title
           p: a(href='/noise'): span.menu_item.last.hidden шум
         .inner2.mutable.hidden_submenu
           -

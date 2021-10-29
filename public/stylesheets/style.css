@@ -60,6 +60,12 @@ body {
   color: #FFF;
   cursor: pointer;
   padding-left: 10em;
+  margin-left: 3em;
+}
+
+#main_menu {
+  margin-right: 3em;
+  margin-bottom: 6em;
 }
 
 #title {
@@ -69,7 +75,7 @@ body {
 }
 
 .inner2 {
-  padding-bottom: 10em;
+  padding-bottom: 5em;
   opacity: 1;
   transition: opacity 0.3s
 }
