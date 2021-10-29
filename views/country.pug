@@ -6,12 +6,12 @@ block slider
     #slider 
         -
             var urls = [
-                'country/1',
-                'country/2',
-                'country/3',
-                'country/4',
-                'country/5',
-                'country/6'
+                'https://downloader.disk.yandex.ru/preview/f20f45eada5447fda366ba680d2b7ac8e60e74255642c6d353f3b9f35e18178d/617c544c/3OaLSz5RtDr_mx4mllX3tF_QlyP84qxTXhCBp8zXNvfiqTL4e0VPxRPqGK8oPsSOOTSYCkKwS7Yi2TVJY2hSWA%3D%3D?uid=0&filename=1.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/46248d189f848f18777afbc832a64efcf1bf53a56e6b1508469eb48a41730618/617c544c/eHKJWIs_J9dZf86b6Lczxl_QlyP84qxTXhCBp8zXNvepMz6P2boNoDAQGYeAMjWhUa7QAIIbvtx_dchbUopaRw%3D%3D?uid=0&filename=2.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/2bb3c3189ce11c3482a1394edcfda41365418e5a0df41c08951bcd18bd6efcd1/617c544c/7CQCY5NHA_rk2EwgVlTFNF_QlyP84qxTXhCBp8zXNvcnt6n6xe0e_UMuZyPUFnNwCkNzUxxVWMR8Ph8ghOefbA%3D%3D?uid=0&filename=3.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/40cbf52de81e9418c38d8824f2e84cec0ea8f061d25d702f0af987002a847b41/617c544c/pWORbx8wvOXg_1TgaMq_dF_QlyP84qxTXhCBp8zXNvfdhlTA6YTaTd-1NgyryKkC7gI4VUiTnNK7t9VIpT4Qfw%3D%3D?uid=0&filename=4.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/d0aa825c81ad551cc889e9d74bd1ff78ec14b3b4ab5a2c82fc6f5777fc55e7d3/617c544c/PvhO0dQeC4Pi7ryfXY9Z3V_QlyP84qxTXhCBp8zXNvfaILP0fcYcJE5GHAJEMnwvbCUfuXpPRUQ2PfgVZZTAUA%3D%3D?uid=0&filename=5.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/9cccdceca1b095aa762def2ecef72b0a30cd114cf8958d1f15376760f00fc0e6/617c544c/82ZxO0dbhBlY8qohz6RzsF_QlyP84qxTXhCBp8zXNvdltjtm9AG5kxo66FZ5s-ukwgpxAVWye49owJzZ_aMNZw%3D%3D?uid=0&filename=6.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979'
             ];
         each item in urls
-            img.slide(src=`../images/${item}.jpg`)
+            img.slide(src=item)
