@@ -6,13 +6,13 @@ block slider
     #slider 
         -
             var urls = [
-                'blue-green/1а',
-                'blue-green/2а',
-                'blue-green/3а',
-                'blue-green/4а',
-                'blue-green/5а',
-                'blue-green/6а',
-                'blue-green/7а'
+                'https://downloader.disk.yandex.ru/preview/ae0ca457be3efe4972cda7c97527b176bc6a4861a7cb448d92ed76446a02f786/617c5283/OluoZAgsg6O6qrKCWz85wqIZwqE34HBH5ZjRNsCV7KUFZNYBCxjZh_nDdzVztqAtmEdNvhcZIBKctclWrGjvxA%3D%3D?uid=0&filename=1%D0%B0.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/6b2cc6639c4aee170b277538cf5acef4df92ac244b6801d524ef281e3b20edeb/617c5283/oj76EUUVcpftyeaKGYx-M6IZwqE34HBH5ZjRNsCV7KXGT4lCq8ftNH52fA0Oh7a8YG5ZMf0xIJ8RDtUCuDdNUA%3D%3D?uid=0&filename=2%D0%B0.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/e3d5ccbe9e5ba12d14e7195006fdca837a9e386c22a41f2ffe1485f827230a01/617c5283/PEJ6jhtk9XJU9ZS11FYzEqIZwqE34HBH5ZjRNsCV7KXbV9raZhi1AWiyZwuqcDF0AOygHju1QoT0KDytBrL3XA%3D%3D?uid=0&filename=3%D0%B0.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/04535f13f98f049e18ed859c59d46b115f34d4c6e7eda0de28db0d98c19e46da/617c5283/5NYzRMe-boVg8iFC_FxYaKIZwqE34HBH5ZjRNsCV7KVKVatkOm_sajTE6KBmln0T6mx2coXGez38TC5j4bVgbg%3D%3D?uid=0&filename=4%D0%B0.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/52ea80d45efa9b981f9ac7126f96f77933a6ff985fa77ba8a71acd10153bd6e6/617c5283/tb-a6gj_VPJ8yJ1B0CGvPaIZwqE34HBH5ZjRNsCV7KUop3eFmHpPVJmqTUTRZ5t8vp9DQk2z3U54oV0DIIdzJA%3D%3D?uid=0&filename=5%D0%B0.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/09f254d109c9d58373baa74bc78a45e7489a505d0528a3fdb43e2928ef9c5290/617c5283/gCWGlbRSm2ZMoK-UsENiR6IZwqE34HBH5ZjRNsCV7KW-37hmFqW8oaK2rY7_sYTm1fzqWTKtCSwkdNRGLrrKsQ%3D%3D?uid=0&filename=6%D0%B0.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979',
+                'https://downloader.disk.yandex.ru/preview/b91a29060b2108d61454a2fbee316faf43a093de178fdac5e867657d2acd2a8b/617c5283/c6P0C6njKKtG7tX3QvdqW6IZwqE34HBH5ZjRNsCV7KUGfhLK7bmz3rfuJVuIieZqGgnOamqdF44unmANbSbHAA%3D%3D?uid=0&filename=7%D0%B0.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x979'
             ];
         each item in urls
-            img.slide(src=`../images/${item}.jpg`)
+            img.slide(src=item)
