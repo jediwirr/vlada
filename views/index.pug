@@ -8,7 +8,7 @@ block content
       .block3
         .inner1
           h1.start.hidden= 'ОБ АВТОРЕ'
-        .inner2
+        .inner2.mutable
           -
             var menu = [
               {title: 'синий светофор', url: '/bluelights'},
@@ -19,8 +19,24 @@ block content
               {title: 'фотосерии', url: '/'}
             ];
           each item in menu
-            a(href=item.url): p.menu_item.other.hidden= item.title
-          a(href='/noise'): p.menu_item.last.hidden шум
+            if item.title === 'фотосерии'
+              p: span.trigger.menu_item.other.hidden= item.title
+            else 
+              p: a(href=item.url):  span.menu_item.other.hidden= item.title
+          p: a(href='/noise'): span.menu_item.last.hidden шум
+        .inner2.mutable.hidden_submenu
+          -
+            var sub_menu = [
+              {title: 'голубо-зелёный', url: '/bluegreen'},
+              {title: 'дача', url: '/country'},
+              {title: 'пастель', url: '/pastel'},
+              {title: 'назад', url: '/'}
+            ];
+          each item in sub_menu
+            if item.title === 'назад'
+              p: span.trigger.menu_item.other.hidden= item.title
+            else 
+              p: a(href=item.url):  span.menu_item.other.hidden= item.title
 
   script(src='/javascripts/index.js')
 

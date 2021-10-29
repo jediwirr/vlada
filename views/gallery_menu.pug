@@ -4,7 +4,7 @@ block content
     #inner_bg
         .inner_main 
             a#inner_title(href='/') VLADA
-            .inner_menu 
+            .inner_menu.mutable
                 -
                     var menu = [
                         {title: 'синий светофор', url: '/bluelights'},
@@ -17,7 +17,25 @@ block content
                         {title: 'об авторе', url: '/'}
                     ];
                 each item in menu
-                    a(href=item.url): span.inner_menu_item= item.title.toUpperCase()
+                    if item.title === 'фотосерии'
+                        span.trigger.inner_menu_item= item.title.toUpperCase()
+                    else
+                        a(href=item.url): span.inner_menu_item= item.title.toUpperCase()
+            .inner_menu.mutable.hidden_submenu
+                -
+                    var sub_menu = [
+                        {title: 'голубо-зелёный', url: '/bluegreen'},
+                        {title: 'дача', url: '/country'},
+                        {title: 'пастель', url: '/pastel'},
+                        {title: 'назад', url: '/'}
+                    ];
+                each item in sub_menu
+                    if item.title === 'назад'
+                        span.trigger.inner_menu_item= item.title.toUpperCase()
+                    else 
+                        a(href=item.url): span.inner_menu_item= item.title.toUpperCase()
             block text
     block gallery
     #footer
+
+    script(src='/javascripts/index.js')
