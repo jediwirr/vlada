@@ -1,0 +1,28 @@
+extends layout
+
+block content 
+  #container_main
+    .main
+      .block2 
+        h1#title= title
+      .block3
+        .inner1
+          h1.start.hidden= 'ОБ АВТОРЕ'
+        .inner2
+          -
+            var menu = [
+              {title: 'синий светофор', url: '/bluelights'},
+              {title: 'автопортреты', url: '/'},
+              {title: 'достоевский', url: '/dostoevsky'},
+              {title: 'зин влада', url: '/vlada'},
+              {title: 'портреты', url: '/'},
+              {title: 'фотосерии', url: '/'}
+            ];
+          each item in menu
+            a(href=item.url): p.menu_item.other.hidden= item.title
+          a(href='/noise'): p.menu_item.last.hidden шум
+
+  script(src='/javascripts/index.js')
+
+    
+

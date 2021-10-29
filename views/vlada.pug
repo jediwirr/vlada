@@ -1,0 +1,22 @@
+extends gallery
+    
+block text 
+
+block slider 
+    #slider 
+        -
+            var urls = [
+                'VLADA/а',
+                'VLADA/б',
+                'VLADA/в',
+                'VLADA/г',
+                'VLADA/д',
+                'VLADA/е',
+                'VLADA/ж',
+                'VLADA/и',
+                'VLADA/к',
+                'VLADA/л',
+                'VLADA/м'
+            ];
+        each item in urls
+            img.slide(src=`../images/${item}.jpg`)

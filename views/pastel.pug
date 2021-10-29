@@ -1,0 +1,14 @@
+extends gallery
+
+block slider 
+    #slider 
+        -
+            var urls = [
+                'pastel/1',
+                'pastel/3-2',
+                'pastel/4-1',
+                'pastel/4',
+                'pastel/5'
+            ];
+        each item in urls
+            img.slide(src=`../images/${item}.jpg`)

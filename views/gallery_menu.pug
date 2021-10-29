@@ -1,0 +1,23 @@
+extends layout 
+
+block content
+    #inner_bg
+        .inner_main 
+            a#inner_title(href='/') VLADA
+            .inner_menu 
+                -
+                    var menu = [
+                        {title: 'синий светофор', url: '/bluelights'},
+                        {title: 'автопортреты', url: '/'},
+                        {title: 'достоевский', url: '/dostoevsky'},
+                        {title: 'зин влада', url: '/vlada'},
+                        {title: 'портреты', url: '/'}, 
+                        {title: 'фотосерии', url: '/'},
+                        {title: 'шум', url: '/noise'}, 
+                        {title: 'об авторе', url: '/'}
+                    ];
+                each item in menu
+                    a(href=item.url): span.inner_menu_item= item.title.toUpperCase()
+            block text
+    block gallery
+    #footer

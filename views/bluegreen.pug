@@ -1,0 +1,18 @@
+extends gallery
+    
+block text 
+
+block slider 
+    #slider 
+        -
+            var urls = [
+                'blue-green/1а',
+                'blue-green/2а',
+                'blue-green/3а',
+                'blue-green/4а',
+                'blue-green/5а',
+                'blue-green/6а',
+                'blue-green/7а'
+            ];
+        each item in urls
+            img.slide(src=`../images/${item}.jpg`)

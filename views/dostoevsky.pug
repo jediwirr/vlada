@@ -1,0 +1,20 @@
+extends gallery
+    
+block slider 
+    #slider 
+        -
+            var urls = [
+                'dostoevsky/0 - аннотация',
+                'dostoevsky/1 - двойник',
+                'dostoevsky/2 - карамазов дмитрий',
+                'dostoevsky/3 - игрок',
+                'dostoevsky/4 - карамазов алёша',
+                'dostoevsky/5 - карамазов иван',
+                'dostoevsky/6 - честный вор',
+                'dostoevsky/7- смердяков',
+                'dostoevsky/8 - ёлка и свадьба',
+                'dostoevsky/9 - записки из подполья',
+                'dostoevsky/99 - идиот'
+            ];
+        each item in urls
+            img.slide(src=`../images/${item}.jpg`)

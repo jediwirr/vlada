@@ -1,0 +1,9 @@
+extends gallery_menu 
+
+block gallery
+    #gallery 
+        p.arrow#arrow_prev: ion-icon(name="chevron-back-outline")
+        block slider
+        p.arrow#arrow_next.pointer_arrow: ion-icon(name="chevron-forward-outline")
+
+    script(src='/javascripts/gallery.js')

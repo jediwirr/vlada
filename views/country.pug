@@ -1,0 +1,17 @@
+extends gallery
+    
+block text 
+
+block slider 
+    #slider 
+        -
+            var urls = [
+                'country/1',
+                'country/2',
+                'country/3',
+                'country/4',
+                'country/5',
+                'country/6'
+            ];
+        each item in urls
+            img.slide(src=`../images/${item}.jpg`)
