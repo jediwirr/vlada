@@ -13,7 +13,7 @@ var countryRouter = require('./routes/country');
 var pastelRouter = require('./routes/pastel');
 var noiseRouter = require('./routes/noise');
 var selfportraitsRouter = require('./routes/selfportraits');
-
+var aboutRouter = require('./routes/about');
 
 var app = express();
 
@@ -36,6 +36,7 @@ app.use('/country', countryRouter);
 app.use('/pastel', pastelRouter);
 app.use('/noise', noiseRouter);
 app.use('/selfportraits', selfportraitsRouter);
+app.use('/about', aboutRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

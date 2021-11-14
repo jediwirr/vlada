@@ -31,9 +31,13 @@ body {
   padding-top: 5em;
 }
 
+.about_p {
+  margin-bottom: 3em;
+}
+
 .photo {
-  width: 30%;
-  padding: 0 0.5em;
+  width: 100%;
+  padding: 0 1em;
 }
 
 .photo img {
