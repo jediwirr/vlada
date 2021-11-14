@@ -12,6 +12,7 @@ var bluegreenRouter = require('./routes/bluegreen');
 var countryRouter = require('./routes/country');
 var pastelRouter = require('./routes/pastel');
 var noiseRouter = require('./routes/noise');
+var selfportraitsRouter = require('./routes/selfportraits');
 
 
 var app = express();
@@ -34,6 +35,7 @@ app.use('/bluegreen', bluegreenRouter);
 app.use('/country', countryRouter);
 app.use('/pastel', pastelRouter);
 app.use('/noise', noiseRouter);
+app.use('/selfportraits', selfportraitsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

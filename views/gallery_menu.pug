@@ -3,8 +3,11 @@ extends layout
 block content
     #inner_bg
         .inner_main 
-            a#inner_title(href='/') VLADA
-            .inner_menu.mutable
+            #inner_header
+                span#trigger_inner_menu.inner_link WORKS
+                span.inner_title VLADA
+                a.inner_link(href='/') ABOUT
+            .inner_menu.mutable.hidden#inner_main_menu
                 -
                     var menu = [
                         {title: 'синий светофор', url: '/bluelights'},

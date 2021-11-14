@@ -5,8 +5,17 @@ body {
   margin: 0;
 }
 
+.noise {
+  width: 80%;
+  height: 100%;
+}
+
+.line_head {
+  font-size: 5em;
+  margin: 0;
+}
+
 #container_main {
-  
   height:100vh;
   margin: 0;
   width: 100%;
@@ -14,6 +23,25 @@ body {
   justify-content: flex-end;
   background: url('../images/main.jpg') no-repeat;
   background-size: cover;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5em;
+}
+
+.photo {
+  width: 30%;
+  padding: 0 0.5em;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.about_vlada {
+  font-size: 1.5em;
 }
 
 .main {
@@ -127,9 +155,6 @@ h1 {
 
 /* GALLERY */
 
-/* .inner_main {
-} */
-
 #inner_bg {
   background-color: #fff;
   width: 100%;
@@ -138,11 +163,23 @@ h1 {
   flex-direction: column;
 }
 
-#inner_title {
+.inner_title {
   padding: 0.2em;
-  font-size: 5em;
+  font-size: 3em;
+  margin: 0;
+}
+
+.inner_link {
+  padding: 0.2em;
+  font-size: 3em;
   margin: 0;
   cursor: pointer;
+}
+
+#inner_header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .inner_menu_item {
@@ -175,7 +212,7 @@ h1 {
 }
 
 .arrow {
-  font-size: 8em;
+  font-size: 2em;
   padding: 0.5em;
   opacity: 0;
   color: #c0c0c0;

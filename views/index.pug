@@ -2,42 +2,42 @@ extends layout
 
 block content 
   #container_main
-    .main
-      .block2 
-        h1#title= title
-      .block3
-        .inner1
-          h1.start.hidden= 'ОБ АВТОРЕ'
-        .inner2.mutable
-          #main_menu
-            -
-              var menu = [
-                {title: 'синий светофор', url: '/bluelights'},
-                {title: 'автопортреты', url: '/'},
-                {title: 'достоевский', url: '/dostoevsky'},
-                {title: 'зин влада', url: '/vlada'},
-                {title: 'портреты', url: '/'},
-                {title: 'фотосерии', url: '/'}
-              ];
-            each item in menu
-              if item.title === 'фотосерии'
-                p: span.trigger.menu_item.other.hidden= item.title
-              else 
-                p: a(href=item.url):  span.menu_item.other.hidden= item.title
-          p: a(href='/noise'): span.menu_item.last.hidden шум
-        .inner2.mutable.hidden_submenu
-          -
-            var sub_menu = [
-              {title: 'голубо-зелёный', url: '/bluegreen'},
-              {title: 'дача', url: '/country'},
-              {title: 'пастель', url: '/pastel'},
-              {title: 'назад', url: '/'}
-            ];
-          each item in sub_menu
-            if item.title === 'назад'
-              p: span.trigger.menu_item.other.hidden= item.title
-            else 
-              p: a(href=item.url):  span.menu_item.other.hidden= item.title
+  .inner_menu.mutable#inner_main_menu
+    -
+      var menu = [
+          {title: 'синий светофор', url: '/bluelights'},
+          {title: 'автопортреты', url: '/selfportraits'},
+          {title: 'достоевский', url: '/dostoevsky'},
+          {title: 'зин влада', url: '/vlada'},
+          //- {title: 'портреты', url: '/'}, 
+          {title: 'фотосерии', url: '/'},
+          {title: 'шум', url: '/noise'}, 
+          {title: 'об авторе', url: '/'}
+      ];
+    each item in menu
+      if item.title === 'фотосерии'
+          span.trigger.inner_menu_item= item.title.toUpperCase()
+      else
+          a(href=item.url): span.inner_menu_item= item.title.toUpperCase()
+  .inner_menu.mutable.hidden_submenu
+    -
+      var sub_menu = [
+          {title: 'голубо-зелёный', url: '/bluegreen'},
+          {title: 'дача', url: '/country'},
+          {title: 'пастель', url: '/pastel'},
+          {title: 'назад', url: '/'}
+      ];
+    each item in sub_menu
+      if item.title === 'назад'
+          span.trigger.inner_menu_item= item.title.toUpperCase()
+      else 
+          a(href=item.url): span.inner_menu_item= item.title.toUpperCase()
+  #about 
+    p.photo: img(src='../images/photo.jpg')
+    div
+      h1.line_head VLADA
+      p.about_vlada Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, molestias asperiores quibusdam qui consequuntur provident illum suscipit ea debitis voluptatibus? Repellendus quae blanditiis neque, atque aspernatur officiis delectus necessitatibus perspiciatis!
+
 
   script(src='/javascripts/index.js')
 
